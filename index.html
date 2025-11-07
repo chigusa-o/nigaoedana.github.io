@@ -27,7 +27,16 @@
       <div class="hero-left">
         <h2>お気に入りの一枚</h2>
         <div id="mainImage" class="main-image">
-          <img src="assets/img/portrait1.jpg" alt="お気に入りの似顔絵" style="width:100%;height:auto;border-radius:12px;">
+          <img 
+            src="assets/img/portrait-main1200.jpg"
+            srcset="assets/img/portrait-main600.jpg 600w,
+                    assets/img/portrait-main1200.jpg 1200w,
+                    assets/img/portrait-main2400.jpg 2400w"
+            sizes="(max-width: 600px) 100vw,
+                   (max-width: 1200px) 50vw,
+                   800px"
+            alt="お気に入りの似顔絵"
+            style="width:100%;height:auto;border-radius:12px;">
         </div>
       </div>
       <div class="hero-right">
