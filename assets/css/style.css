@@ -1,4 +1,4 @@
-:root{--sidebar-w:10cm;--accent:#4fe39b;--bg:#f7fff8;--text:#222}
+:root{--sidebar-w:5cm;--accent:#4fe39b;--bg:#f7fff8;--text:#222}
 *{box-sizing:border-box}
 html,body{
 	height:100%;
@@ -6,20 +6,19 @@ html,body{
 	font-family:'Hiragino Kaku Gothic ProN','Meiryo','Segoe UI',system-ui,-apple-system,'Noto Sans JP',sans-serif;
 	color:var(--text);
 	background:linear-gradient(180deg,#eafff0,#ffffff);
-}
 body{display:flex;min-height:100vh;}
-.sidebar{position:sticky;top:0;flex:0 0 var(--sidebar-w);height:100vh;padding:28px 18px;background:var(--accent);color:#043;display:flex;flex-direction:column;gap:18px}
-.sidebar h1{font-size:20px;margin:0 0 8px 0}
+.sidebar{position:sticky;top:0;flex:0 0 5cm;width:5cm;height:100vh;padding:28px 18px;background:var(--accent);color:#043;display:flex;flex-direction:column;gap:18px}
+.sidebar h1{font-size:35px;margin:0 0 8px 0}
 .sidebar nav ul{list-style:none;padding:0;margin:0}
 .sidebar nav a{color:#042;font-weight:600;text-decoration:none}
 .sidebar .sns{margin-top:auto;display:flex;gap:8px}
 .sidebar .sns a{background:#fff;padding:6px 10px;border-radius:8px;text-decoration:none;color:#042;font-weight:700}
 .content{flex:1;margin-left:0;padding:36px}
-.hero{display:flex;width:100%;height:100vh}
-.hero-image-wrapper{flex:1;overflow:hidden}
-.hero-image{width:100%;height:100%;object-fit:cover}
-.hero-text{flex:0 0 220px;background:#fff;display:flex;align-items:start;justify-content:center;padding:40px 20px}
-.hero-text p{writing-mode:vertical-rl;text-orientation:upright;color:var(--accent);font-size:20px;font-weight:bold;letter-spacing:0.1em;margin:0}
+.hello{display:flex;width:100%;height:100vh}
+.hello-image-wrapper{flex:1;overflow:hidden}
+.hello-image{width:100%;height:100%;object-fit:cover}
+.hello-text{flex:0 0 220px;background:#fff;display:flex;align-items:start;justify-content:center;padding:40px 20px}
+.hello-text p{writing-mode:vertical-rl;text-orientation:upright;color:var(--accent);font-size:20px;font-weight:bold;letter-spacing:0.1em;margin:0}
 .gallery{margin-top:36px;padding:36px}
 .thumbs-wrap{overflow:hidden;border-radius:12px;background:transparent;padding:12px 0}
 .thumbs{display:flex;gap:12px;align-items:center;animation:scroll-left 18s linear infinite}
@@ -50,10 +49,10 @@ body{display:flex;min-height:100vh;}
 	.sidebar h1{font-size:16px;margin:0}
 	/* コンテンツが上部の固定ヘッダに被らないよう余白を確保 */
 	.content{margin-left:0;margin-top:76px;padding:0}
-	.hero{flex-direction:column;height:auto}
-	.hero-image-wrapper{height:60vh}
-	.hero-text{flex:0 0 auto;padding:20px}
-	.hero-text p{font-size:16px}
+	.hello{flex-direction:column;height:auto}
+	.hello-image-wrapper{height:60vh}
+	.hello-text{flex:0 0 auto;padding:20px}
+	.hello-text p{font-size:16px}
 	.gallery,.introduction,.portraits{padding:0 18px;margin-top:18px}
 	.portrait svg{width:160px}
 	.thumb{width:100px;height:100px}
