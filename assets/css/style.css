@@ -1,25 +1,18 @@
-:root{--sidebar-w:5cm;--accent:#4fe39b;--bg:#f7fff8;--text:#222}
+:root{--sidebar-w:220px;--accent:#4fe39b;--bg:#f7fff8;--text:#222}
 *{box-sizing:border-box}
-html,body{
-	height:100%;
-	margin:0;
-	font-family:'Hiragino Kaku Gothic ProN','Meiryo','Segoe UI',system-ui,-apple-system,'Noto Sans JP',sans-serif;
-	color:var(--text);
-	background:linear-gradient(180deg,#eafff0,#ffffff);
-body{display:flex;min-height:100vh;}
-.sidebar{position:sticky;top:0;flex:0 0 5cm;width:5cm;height:100vh;padding:28px 18px;background:var(--accent);color:#043;display:flex;flex-direction:column;gap:18px}
-.sidebar h1{font-size:35px;margin:0 0 8px 0}
+html,body{height:100%;margin:0;font-family:『Hiragino Kaku Gothic ProN』『メイリオ', 'Segoe UI', system-ui, -apple-system, 'Noto Sans JP', sans-serif;color:var(--text);background:linear-gradient(180deg,#eafff0,#ffffff)}
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:var(--sidebar-w);padding:28px 18px;background:var(--accent);color:#043;display:flex;flex-direction:column;gap:18px}
+.sidebar h1{font-size:20px;margin:0 0 8px 0}
 .sidebar nav ul{list-style:none;padding:0;margin:0}
 .sidebar nav a{color:#042;font-weight:600;text-decoration:none}
 .sidebar .sns{margin-top:auto;display:flex;gap:8px}
 .sidebar .sns a{background:#fff;padding:6px 10px;border-radius:8px;text-decoration:none;color:#042;font-weight:700}
-.content{flex:1;margin-left:0;padding:36px}
-.hello{display:flex;width:100%;height:100vh}
-.hello-image-wrapper{flex:1;overflow:hidden}
-.hello-image{width:100%;height:100%;object-fit:cover}
-.hello-text{flex:0 0 220px;background:#fff;display:flex;align-items:start;justify-content:center;padding:40px 20px}
-.hello-text p{writing-mode:vertical-rl;text-orientation:upright;color:var(--accent);font-size:20px;font-weight:bold;letter-spacing:0.1em;margin:0}
-.gallery{margin-top:36px;padding:36px}
+.content{margin-left:calc(var(--sidebar-w) + 20px);padding:36px}
+.hero{display:flex;gap:20px;align-items:center}
+.hero-left{flex:1}
+.hero-right{flex:1}
+.main-image{width:100%;max-width:420px;background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+.gallery{margin-top:36px}
 .thumbs-wrap{overflow:hidden;border-radius:12px;background:transparent;padding:12px 0}
 .thumbs{display:flex;gap:12px;align-items:center;animation:scroll-left 18s linear infinite}
 .thumb{width:120px;height:120px;flex:0 0 auto;cursor:pointer;display:flex;align-items:center;justify-content:center}
@@ -30,7 +23,6 @@ body{display:flex;min-height:100vh;}
 .card{background:#fff;padding:12px;border-radius:10px;box-shadow:0 6px 12px rgba(0,0,0,0.06);text-align:center}
 .about-page .about-card{display:flex;gap:18px;align-items:center}
 .portrait svg{width:220px;height:auto}
-.introduction,.portraits{padding:0 36px;margin-top:36px}
 @media (max-width:800px){
 	/* モバイルではサイドバーを上部にして固定表示にする（スライド中でも表示が消えない） */
 	.sidebar{
@@ -48,12 +40,8 @@ body{display:flex;min-height:100vh;}
 	}
 	.sidebar h1{font-size:16px;margin:0}
 	/* コンテンツが上部の固定ヘッダに被らないよう余白を確保 */
-	.content{margin-left:0;margin-top:76px;padding:0}
-	.hello{flex-direction:column;height:auto}
-	.hello-image-wrapper{height:60vh}
-	.hello-text{flex:0 0 auto;padding:20px}
-	.hello-text p{font-size:16px}
-	.gallery,.introduction,.portraits{padding:0 18px;margin-top:18px}
+	.content{margin-left:0;margin-top:76px;padding:18px}
+	.hero{flex-direction:column}
 	.portrait svg{width:160px}
 	.thumb{width:100px;height:100px}
 }
