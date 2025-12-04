@@ -28,6 +28,7 @@ html,body{
 /* grid for works */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:18px;margin-top:18px}
 .card{background:#fff;padding:12px;border-radius:10px;box-shadow:0 6px 12px rgba(0,0,0,0.06);text-align:center}
+.card img{width:100%;height:auto;border-radius:8px}
 .about-page .about-card{display:flex;gap:18px;align-items:center}
 .portrait svg{width:220px;height:auto}
 .profile-image{width: 200px;height: auto;border-radius: 8px;}
