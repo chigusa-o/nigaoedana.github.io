@@ -32,7 +32,37 @@ html,body{
 .about-page .about-card{display:flex;gap:18px;align-items:center}
 .portrait svg{width:220px;height:auto}
 .profile-image{width: 200px;height: auto;border-radius: 8px;}
-.introduction,.portraits{padding:0 36px;margin-top:36px}
+.introduction{
+  padding: 40px 36px;
+  margin-top:36px;
+  border:2px solid var(--accent);
+  border-radius:18px;
+  background:#f7fff8;
+  max-width:900px;
+  min-height:250px;
+  margin:36px auto 0 auto
+}
+.intro-content{
+  display:flex;
+  gap:24px;
+  align-items:flex-start
+}
+.intro-content p{margin:0;line-height:1.8}
+.portraits{padding:0 36px;margin-top:36px}
+.read-more-btn{
+  display:inline-block;
+  margin-top:16px;
+  padding:10px 20px;
+  background:var(--accent);
+  color:#042;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:600;
+  transition:background 0.3s
+}
+.read-more-btn:hover{
+  background:#3dd689
+}
 @media (max-width:800px){
 	/* モバイルではサイドバーを上部にして固定表示にする（スライド中でも表示が消えない） */
 	.sidebar{
@@ -56,6 +86,7 @@ html,body{
 	.hello-text{flex:0 0 auto;padding:20px}
 	.hello-text p{font-size:16px}
 	.gallery,.introduction,.portraits{padding:0 18px;margin-top:18px}
+	.intro-content{flex-direction:column}
 	.portrait svg{width:160px}
 	.thumb{width:140px;height:140px}
 }
