@@ -49,6 +49,30 @@ html,body{
 }
 .intro-content p{margin:0;line-height:1.8}
 .portraits{padding:0 36px;margin-top:36px}
+.category-nav{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin:24px 0
+}
+.category-btn{
+  padding:8px 16px;
+  border:2px solid var(--accent);
+  background:#fff;
+  color:var(--text);
+  border-radius:20px;
+  cursor:pointer;
+  font-weight:600;
+  transition:all 0.3s
+}
+.category-btn:hover{
+  background:var(--accent);
+  color:#042
+}
+.category-btn.active{
+  background:var(--accent);
+  color:#042
+}
 .read-more-btn{
   display:inline-block;
   margin-top:16px;
@@ -63,6 +87,48 @@ html,body{
 .read-more-btn:hover{
   background:#3dd689
 }
+
+/* モーダルのスタイル */
+.modal{
+  display:none;
+  position:fixed;
+  z-index:1000;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  overflow:auto
+}
+.modal-content{
+  display:block;
+  margin:auto;
+  max-width:90%;
+  max-height:90vh;
+  position:relative;
+  top:50%;
+  transform:translateY(-50%)
+}
+.modal-close{
+  position:absolute;
+  top:20px;
+  right:40px;
+  color:#fff;
+  font-size:40px;
+  font-weight:bold;
+  cursor:pointer;
+  z-index:1001
+}
+.modal-close:hover{
+  color:#3dd689
+}
+.modal-caption{
+  text-align:center;
+  color:#fff;
+  padding:10px 20px;
+  font-size:16px
+}
+
 @media (max-width:800px){
 	/* モバイルではサイドバーを上部にして固定表示にする（スライド中でも表示が消えない） */
 	.sidebar{
