@@ -36,9 +36,43 @@ html,body{
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px;margin-top:18px}
 .card{background:#fff;padding:12px;border-radius:10px;box-shadow:0 6px 12px rgba(0,0,0,0.06);text-align:center}
 .card img{width:100%;height:auto;border-radius:8px}
+.about-page {
+  position: relative;
+}
+.about-page .profile-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+.profile-header {
+  display: flex;  /* 横並びにする */
+  align-items: flex-start;
+  gap: 80px;  /* 間隔 */
+}
+.about-card {
+  margin-top: 170px;
+}
+.image-with-title {
+  position: relative;  /* ←これがh2の基準になる */
+  width: 245px;
+  flex-shrink: 0;
+}
+.about-page h2 {
+  position: absolute;
+  top: -30px;
+  left: 40px;
+  width: 100%; /* 画像の幅に合わせる */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  z-index: 10;
+  line-height: 180px;  /* 「自己」と「紹介」の間隔 */
+  letter-spacing: 10px;
+  font-family: "Slackside One", cursive;
+}
 .about-page .about-card{display:flex;gap:18px;align-items:center}
 .portrait svg{width:220px;height:auto}
-.profile-image{width: 200px;height: auto;border-radius: 8px;}
+.profile-image{width: 100px;height: auto;border-radius: 8px;}
 .introduction{
   padding: 40px 36px;
   margin-top:36px;
