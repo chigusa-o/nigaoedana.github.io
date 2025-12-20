@@ -49,7 +49,7 @@ html,body{
   align-items: flex-start;
   gap: 80px;  /* 間隔 */
 }
-.about-card {
+.profile-header .about-card {
   margin-top: 170px;
 }
 .image-with-title {
@@ -69,6 +69,18 @@ html,body{
   line-height: 180px;  /* 「自己」と「紹介」の間隔 */
   letter-spacing: 10px;
   font-family: "Slackside One", cursive;
+}
+.profile-section {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  margin-top: 40px;
+}
+.section-image {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
 }
 .about-page .about-card{display:flex;gap:18px;align-items:center}
 .portrait svg{width:220px;height:auto}
