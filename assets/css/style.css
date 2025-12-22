@@ -5,7 +5,7 @@ html,body{
 	margin:0;
 	font-family:'Hiragino Kaku Gothic ProN','Meiryo','Segoe UI',system-ui,-apple-system,'Noto Sans JP',sans-serif;
 	color:var(--text);
-	background:#fff}
+	background:#E9FFFB}
 .sidebar{position:fixed;top:0;flex:0 0 5cm;width:var(--sidebar-w);height:100vh;padding:28px 18px;background:var(--accent);color:#043;display:flex;flex-direction:column;gap:18px}
 .sidebar h1{font-size:25px;margin:0 0 50px 0;text-align:center;font-family:var(--heading-font);line-height:1.2;}
 .sidebar nav{text-align:center}
@@ -17,7 +17,7 @@ html,body{
 .sidebar .sns{margin-top:20px;margin-bottom:10px;display:flex;gap:35px;justify-content:center}
 .sidebar .sns a{text-decoration:none;color:#042;font-weight:700;display:flex;align-items:center;justify-content:center}
 .sidebar .sns a i{font-size: 45px;}
-.content{flex:1;margin-left:var(--sidebar-w);background:#fff}
+.content{flex:1;margin-left:var(--sidebar-w);background:#E9FFFB}
 .content > :not(.hello){padding:36px}
 .content h2{padding-bottom: 20px !important; margin-bottom: 0 !important;}
 .content h2 + p{padding-top: 0 !important; margin-top: 0 !important;}
@@ -53,7 +53,7 @@ html,body{
   gap: 80px;  /* 間隔 */
 }
 .profile-header .about-card {
-  margin-top: 170px;
+  margin-top: 90px;
 }
 .image-with-title {
   position: relative;  /* ←これがh2の基準になる */
