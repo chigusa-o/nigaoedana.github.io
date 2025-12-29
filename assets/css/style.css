@@ -43,9 +43,8 @@ html,body{
   position: relative;
 }
 .about-page .profile-image {
-  width: 300px;
+  width: 160px;
   height: auto;
-  border-radius: 8px;
 }
 .profile-header {
   display: flex;  /* 横並びにする */
