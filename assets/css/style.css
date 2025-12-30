@@ -185,23 +185,32 @@ html,body{
 }
 
 @media (max-width:800px){
-	/* モバイルではサイドバーを上部にして固定表示にする（スライド中でも表示が消えない） */
+	/* モバイルではサイドバーを上部にして固定表示にする */
 	.sidebar{
 		position:fixed;
 		left:0;
 		top:0;
 		right:0;
 		width:100%;
+		height:auto;
 		display:flex;
 		flex-direction:row;
 		align-items:center;
-		padding:12px;
-		gap:12px;
+		justify-content:space-between;
+		padding:8px 12px;
+		gap:8px;
 		z-index:1000;
 	}
-	.sidebar h1{font-size:16px;margin:0}
+	.sidebar h1{font-size:14px;margin:0;flex-shrink:0}
+	.sidebar nav{flex:1;text-align:center}
+	.sidebar nav ul{margin:0;padding:0;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+	.sidebar nav li{margin:0}
+	.sidebar nav a{font-size:12px;padding:4px 8px}
+	.nav-icon{width:30px;height:30px;padding:3px}
+	.sidebar .sns{margin:0;gap:8px;flex-shrink:0}
+	.sidebar .sns a i{font-size:24px}
 	/* コンテンツが上部の固定ヘッダに被らないよう余白を確保 */
-	.content{margin-left:0;margin-top:76px;padding:0}
+	.content{margin-left:0;margin-top:80px;padding:0}
 	.hello{flex-direction:column;height:auto}
 	.hello-image-wrapper{height:60vh}
 	.hello-text{flex:0 0 auto;padding:20px}
