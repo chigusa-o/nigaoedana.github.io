@@ -29,16 +29,13 @@
   <main class="content">
     <section class="hello">
       <div class="hello-image-wrapper">
-        <img 
-          src="assets/img/top_1.jpg"
-          srcset="assets/img/top_1.jpg 600w,
-                  assets/img/top_1.jpg 1200w,
-                  assets/img/top_1.jpg 2400w"
-          sizes="(max-width: 600px) 100vw,
-                 (max-width: 1200px) 50vw,
-                 800px"
-          alt="お気に入りの似顔絵"
-          class="hello-image">
+        <picture>
+          <source media="(max-width: 800px)" srcset="assets/img/top01.jpg">
+          <img 
+            src="assets/img/top_1.jpg"
+            alt="お気に入りの似顔絵"
+            class="hello-image">
+        </picture>
           <!-- 個別の似顔絵画像を配置 -->
           <a href="about.html" class="portrait-item" style="top:12%;left:31%;width:12.5%;flex-direction:column-reverse;">
             <img src="assets/img/portrait1.png" alt="自己紹介">
