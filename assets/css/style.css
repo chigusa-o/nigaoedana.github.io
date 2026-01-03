@@ -184,6 +184,14 @@ html,body{
   font-size:16px
 }
 
+@media (max-width:1200px) and (min-width:801px){
+	/* 中間サイズの画面でサイドバーをスクロール可能に */
+	.sidebar{
+		overflow-y:auto;
+		overflow-x:hidden;
+	}
+}
+
 @media (max-width:800px){
 	/* モバイルではサイドバーを上部にして固定表示にする */
 	.sidebar{
@@ -200,11 +208,13 @@ html,body{
 		padding:8px 12px;
 		gap:8px;
 		z-index:1000;
+		overflow-x:auto;
+		overflow-y:hidden;
 	}
 	.sidebar h1{font-size:14px;margin:0;flex-shrink:0}
-	.sidebar nav{flex:1;text-align:center}
-	.sidebar nav ul{margin:0;padding:0;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-	.sidebar nav li{margin:0}
+	.sidebar nav{flex:1;text-align:center;overflow-x:auto}
+	.sidebar nav ul{margin:0;padding:0;display:flex;gap:8px;justify-content:flex-start;flex-wrap:nowrap}
+	.sidebar nav li{margin:0;flex-shrink:0}
 	.sidebar nav a{font-size:12px;padding:4px 8px}
 	.nav-icon{width:30px;height:30px;padding:3px}
 	.sidebar .sns{margin:0;gap:8px;flex-shrink:0}
