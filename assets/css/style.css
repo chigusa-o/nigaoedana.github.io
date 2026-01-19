@@ -171,7 +171,14 @@ html,body{
   padding:10px 20px;
   font-size:16px
 }
-
+@media (min-width:1201px){
+	/* 大画面では最大幅を制限して配置を固定 */
+	.hello{
+		max-width:1200px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
 @media (max-width:1200px) and (min-width:801px){
 	/* 中間サイズの画面でサイドバーをスクロール可能に */
 	.sidebar{
