@@ -60,19 +60,6 @@ html,body{
   width: 245px;
   flex-shrink: 0;
 }
-.about-page h2 {
-  position: absolute;
-  top: -30px;
-  left: 40px;
-  width: 100%; /* 画像の幅に合わせる */
-  align-items: center;
-  text-align: center;
-  margin: 0;
-  z-index: 10;
-  line-height: 180px;  /* 「自己」と「紹介」の間隔 */
-  letter-spacing: 10px;
-  font-family: "Slackside One", cursive;
-}
 .profile-section {
   display: flex;
   gap: 80px;
