@@ -29,32 +29,40 @@
   <main class="content">
     <h2>作品：花×名前(はなまえ)</h2>
     <p>その人の名前の頭文字を好きな植物でデザイン</p>
+    <div class="category-nav">
+      <button class="category-btn active" data-category="all">すべて (7)</button>
+      <button class="category-btn" data-category="akagyo">あ～か行 (1)</button>
+      <button class="category-btn" data-category="satagyo">さ～た行 (1)</button>
+      <button class="category-btn" data-category="nahagyo">な～は行 (1)</button>
+      <button class="category-btn" data-category="mayagyo">ま～や行 (2)</button>
+      <button class="category-btn" data-category="rawagyo">ら～わ行 (2)</button>
+    </div>
     <div class="grid">
-      <div class="card">
+      <div class="card" data-category="akagyo">
         <img src="../assets/img/11.jpg" alt="花×名前作品1">
         <p>えり×シークヮーサーネロリ</p>
       </div>
-      <div class="card">
+      <div class="card" data-category="satagyo">
         <img src="../assets/img/19.jpg" alt="花×名前作品2">
         <p>千花×スモークツリー</p>
       </div>
-      <div class="card">
+      <div class="card" data-category="nahagyo">
         <img src="../assets/img/30.jpg" alt="花×名前作品3">
         <p>はるか×グラジオラス</p>
       </div>
-      <div class="card">
+      <div class="card" data-category="rawagyo">
         <img src="../assets/img/41.JPG" alt="花×名前作品4">
         <p>りさ×ガーベラ</p>
       </div>
-      <div class="card">
+      <div class="card" data-category="mayagyo">
         <img src="../assets/img/44.JPG" alt="花×名前作品5">
         <p>夕紀×アネモネ</p>
       </div>
-      <div class="card">
+      <div class="card" data-category="mayagyo">
         <img src="../assets/img/45.JPG" alt="花×名前作品6">
         <p>ゆり×メイチャン</p>
       </div>
-      <div class="card">
+      <div class="card" data-category="rawagyo">
         <img src="../assets/img/46.JPG" alt="花×名前作品7">
         <p>わかな×ラナンキュラス</p>
       </div>
@@ -66,6 +74,6 @@
     <img class="modal-content" id="modalImage">
     <div class="modal-caption" id="modalCaption"></div>
   </div>
-  <script src="../assets/js/modal.js"></script>
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>
