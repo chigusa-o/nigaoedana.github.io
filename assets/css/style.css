@@ -30,7 +30,7 @@ html,body{
 .hello-image{width:100%;height:100%;object-fit:cover}
 .hello-text{position:absolute;left:50%; top:50%; transform:translate(-50%, -50%);background:transparent;z-index:10; text-align: center;}
 .hello-text p{font-family:var(--heading-font);font-size:30px;font-weight:normal;letter-spacing:0.1em;margin:0}
-.hello-text h1{font-family:var(--heading-font);font-size:46px;font-weight:normal;letter-spacing:0.18em;margin:20px -80px}
+.hello-text h1{font-family:var(--heading-font);font-size:46px;font-weight:normal;letter-spacing:0.18em;margin:20px 0}
 .hello-text h1 br{display:none}
 .portrait-item{position:absolute;text-decoration:none;transition:all 0.3s;z-index:20;display:flex;flex-direction:column;align-items:center;cursor:pointer;animation:floating 4s ease-in-out infinite}
 .portrait-item img{width:100%;height:auto;display:block;filter:drop-shadow(2px 2px 4px rgba(0,0,0,0.3));transition:all 0.3s}
@@ -212,6 +212,9 @@ html,body{
 	.portrait-item{
 		display:none;
 	}
+  /* タイトルの改行をインライン表示に */
+  .hello-text h1 br{display:inline}
+
 	/* タブレットサイズの自己紹介ページ */
 	.about-page {
 		padding: 180px 70px !important;
@@ -256,10 +259,11 @@ html,body{
 	.content{margin-left:0;margin-top:80px;padding:0}
 	.hello{flex-direction:column;height:auto;margin-top:-80px;padding-top:0}
 	.hello-image-wrapper{height:100vh;position:relative}
-	.hello-text{padding:20px;position:absolute;left:50%;top:50vh;transform:translate(-50%,-50%);z-index:1001;text-align:center;width:auto}
-	.hello-text p{font-size:25px;text-align:center;margin:20px -70px;}
-	.hello-text h1{font-size:40px;text-align:center;margin:10px -70px;line-height: 1.2;}
-	.hello-text h1 br{display:inline}
+	.hello-text{padding:20px;position:absolute;left:50%;top:50vh;transform:translate(-50%,-50%);z-index:1001;text-align:center;width:90vw;max-width:500px;}
+	.hello-text p{font-size:25px;text-align:center;margin:20px 0;}
+	.hello-text h1{font-size:40px;text-align:center;margin:10px 0;line-height: 1.2;}
+  /* タイトルの改行をインライン表示に */
+  .hello-text h1 br{display:inline}
 	.portrait-item{display:none}
 	.gallery,.introduction,.portraits{padding:0 18px;margin-top:18px}
 	.intro-content{flex-direction:column}
