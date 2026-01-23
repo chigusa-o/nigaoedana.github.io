@@ -46,11 +46,28 @@ html,body{
 .card img{width:100%;height:auto;border-radius:8px}
 .about-page {
   position: relative;
+  padding: 120px 90px !important;
+  background: transparent;
+}
+
+.about-page::before {
+  content: '';
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('../img/自己紹介背景画像.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  padding: 120px 90px !important;
+  background-repeat: no-repeat;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.about-page > * {
+  position: relative;
+  z-index: 1;
 }
 .about-page .profile-section {
   background: #E9FFFB;
@@ -219,6 +236,9 @@ html,body{
 	.about-page {
 		padding: 180px 70px !important;
 	}
+	.about-page::before {
+		background-attachment: scroll;
+	}
 	.section-image{
 		width:70px;
 		height:70px;
@@ -269,6 +289,10 @@ html,body{
 	.intro-content{flex-direction:column}
 	.about-page {
 		padding: 70px 35px !important;
+	}
+	.about-page::before {
+		background-attachment: scroll;
+		background-size: cover;
 	}
 	.portrait svg{width:160px}
 	.thumb{width:140px;height:140px}
