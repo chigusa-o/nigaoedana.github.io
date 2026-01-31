@@ -287,6 +287,14 @@ html,body{
 	.portrait-item{display:none}
 	.gallery,.introduction,.portraits{padding:0 18px;margin-top:18px}
 	.intro-content{flex-direction:column}
+
+  .grid {
+    grid-template-columns:repeat(auto-fill,minmax(100px,1fr));
+  }
+  .card p {
+    font-size: 10px;
+    margin: 8px 0 0 0;
+  }
 	.about-page {
 		padding: 70px 35px !important;
 	}
@@ -304,4 +312,5 @@ html,body{
 	.title-row{
 		gap:12px;
 	}
+  
 }
