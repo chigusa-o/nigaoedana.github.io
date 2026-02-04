@@ -74,10 +74,10 @@ html,body{
   padding: 36px;
   margin-bottom: 120px;
   border-radius: 12px;
+  opacity: 0.85;
 }
-.about-page .profile-image {
-  width: 160px;
-  height: auto;
+.about-page .profile-section:last-child {
+  margin-bottom: 0;
 }
 .about-page .profile-image {
   width: 160px;
