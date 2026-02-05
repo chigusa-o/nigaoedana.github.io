@@ -170,6 +170,36 @@ html,body{
 .read-more-btn:hover{
   background:#3dd689
 }
+/* toppageに戻る */
+html {
+  scroll-behavior: smooth;
+}
+.pagetop {
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  width:40px;
+  height:40px;
+  background:var(--accent);
+  border-radius:25%;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:2;
+  opacity: 1;
+  transition:background 0.3s,opacity 0.3s;
+}
+.pagetop__arrow {
+  height: 15px;
+  width: 15px;
+  border-top: 4px solid white;
+  border-right: 4px solid white;
+  transform: translateY(20%) rotate(-45deg);
+}
+.pagetop:hover {
+  opacity: 0.8;
+}
 
 /* モーダルのスタイル */
 .modal{
